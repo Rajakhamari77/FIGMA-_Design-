@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Embrace Sideboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <div class="image-container">
+      <img src="laura.jpg" alt="Embrace Sideboard" class="thumbnail1">
+      <div class="thumbnails">
+        <img src="laura.jpg" class="thumbnail">
+        <img src="laura1.jpg" class="thumbnail">
+        <img src="laura2.jpg" class="thumbnail">
+        <img src="laura3.jpg" class="thumbnail">
+      </div>
+    </div>
+    <div class="product-info">
+      <h4>1. Marmeto</h4>
+      <h2>2. Embrace Sideboard</h2>
+      <div class="price">$12999.00</div>
+      <div class="compare-at-price">$19999.00</div>
+      <div class="percentage-off">35% Off</div>
+      <p>choose a Color </p>
+      <div class="color-options">
+        <div class="color-option selected" style="background-color:#ecdecc" data-color="Beige"></div>
+        <div class="color-option" style="background-color: #BBd278" data-color="Yellow"></div>
+        <div class="color-option" style="background-color: #bbc1fa" data-color="Blue"></div>
+        <div class="color-option" style="background-color: #ffd3f8" data-color="Pink"></div>
+      </div>
+      <p>Choose a Size</p>
+      <div class="size-options">
+        <input type="radio" name="size" id="size-small" value="Small" checked>
+        <label for="size-small">Small</label>
+        <input type="radio" name="size" id="size-medium" value="Medium">
+        <label for="size-medium">Medium</label>
+        <input type="radio" name="size" id="size-large" value="Large">
+        <label for="size-large">Large</label>
+        <input type="radio" name="size" id="size-Extra-large" value="Extra Large">
+        <label for="size-Extra-large">Extra Large</label>
+        <input type="radio" name="size" id="size-XXL" value="XXL">
+        <label for="size-XXL">XXL</label>
+      </div>
+      <div class="quantity">
+        <div class="quantity-input">
+          <button type="button" onclick="decrement()">-</button>
+          <input type="text" id="quantity" value="1">
+          <button type="button" onclick="increment()">+</button>
+        </div> 
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+      </div>   
+     
+      <div class="add-to-cart-message" id="cart-message">Embrace Sideboard with Color Yellow and Size Small added to cart</div>   
+        
+      <div class="description">
+        <p>The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
